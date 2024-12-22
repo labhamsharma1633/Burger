@@ -9,6 +9,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+@font-face{
+    font-family: 'bobblebod';
+    src: url(font/Bobblebod.ttf);
+}
 html{
     font-family: 'Poppins',sans-serif;
 }
@@ -16,7 +20,7 @@ header{
     position: relative;
     width: 100%;
     height: 400px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     
 }
 header::before{
@@ -33,10 +37,11 @@ header::before{
 header nav{
     width: 80%;
     height: 70px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     margin: 0 auto;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 header nav .logo_ul{
     display: flex;
@@ -95,5 +100,165 @@ header nav .contact_select li{
     display: flex;
     align-items: center;
     padding: 3px 10px;
-    
+
+}
+header nav .contact_select li a{
+    font-size: 13px;
+    color: #fff;
+    margin-right: 10px;
+    text-decoration: none;
+
+}
+header nav .contact_select li:nth-child(2){
+    background: #fff;
+    border-radius: 10px;
+    padding: 2px 13px 1px 13px;
+    width: 100px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+
+}
+
+/* SECTION START */
+section{
+    width: 80%;
+    border: 1px solid #000;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+
+
+
+}
+section .content,.img_bx{
+    position: relative;
+    width: 40%;
+    border: 1px solid #000;
+    padding: 10px;
+
+
+
+}
+section .img_bx{
+    width: 60%;
+
+}
+section .content h5{
+    background: #f04417;
+    display: unset;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 10px;
+
+}
+section .content h1{
+    margin-top: 5px;
+    font-family: 'bobblebod';
+    font-size: 65px;
+    line-height: 55px;
+    letter-spacing: -2px;
+
+
+}
+section .content .spicy_icon{
+    margin-top: 12px;
+
+}
+section .content p{
+    margin-top: 20px;
+    width: 300px;
+    font: 12px;
+
+}
+section .content h6{
+    margin-top: 20px;
+    color: gray;
+}
+section .content .ing_icon{
+    display: flex;
+    align-items: center;
+}
+section .content .ing_icon img{
+    margin-right: 9px;
+}
+section .content .ing_icon h6{
+    background: #00a950;
+    color: #fff;
+    border-radius: 50%;
+    padding: 8px 10px;
+    position: relative;
+    top: -10px;
+
+}
+section .content .order_rate{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+}
+section .content .order_rate a{
+    background: #000;
+    border-radius: 10px;
+    padding: 7px 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: "bobblebod";
+    transition: .3s linear;
+
+}
+section .content .order_rate a:hover{
+    background: #00a950;
+
+}
+section .content .order_rate h2{
+    margin-left: 30px;
+    color: #00a950;
+    font-size: 30px;
+    font-weight: 900;
+}
+section .content .order_rate h2 sup{
+    margin-left: 5px;
+    color: #a3ca72;
+    font-size: 16px;
+    font-weight: 900px;
+    position: relative;
+    top: -5px;
+
+}
+section .content .food_slider{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+section .content .food_slider::-webkit-scrollbar{
+    display: none;
+
+}
+section .content .food_slider img{
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    cursor: pointer;
+    opacity: .3;
+    transition: .3s linear;
+
+
+}
+section .content .food_slider img:nth-child(1){
+    opacity: 1;
+    transform: scale(1.1);
+
+}
+section .content .food_slider img:hover{
+    opacity: 1;
+    transform: scale(1);
 }
