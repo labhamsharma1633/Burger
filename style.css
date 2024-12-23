@@ -126,7 +126,7 @@ header nav .contact_select li:nth-child(2){
 /* SECTION START */
 section{
     width: 80%;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     margin: auto;
     margin-top: 20px;
     display: flex;
@@ -137,7 +137,7 @@ section{
 section .content,.img_bx{
     position: relative;
     width: 40%;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     padding: 10px;
 
 
@@ -303,4 +303,152 @@ section .img_bx .slide_btns i{
     cursor: pointer;
     transition: .3s linear;
 
+}
+section .img_bx .burger_badge{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 10%;
+    right: 22%;
+    z-index: 9999;
+}
+section .img_bx .burger_badge .badge_card{
+    width: 70px;
+    height: 80px;
+    background: #fff;
+    box-shadow: 0px 0px 20px rgb(0,0,0,0.05);
+    margin-right: 5px;
+    border-radius: 5px 5px 15px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+section .img_bx .burger_badge .badge_card p{
+    color: gray;
+    font-size: 11px;
+
+}
+section .img_bx .burger_badge .badge_card h5{
+    color: #f04417;
+    font-size: 14px;
+    font-weight: 900;
+
+}
+.del{
+    width: 100%;
+    margin: auto;
+    background: #fbf8f2;
+    height: auto;
+    padding: 40px 10%;
+    display: flex;
+    align-items: center;
+
+}
+.del .const h1{
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 50px;
+    font-family: "bobblebod";
+
+}
+.del .const p{
+    font-size: 12px;
+    color: rgb(0,0,0,.5);
+    font-weight: 600;
+    margin: 15px 0;
+}
+.del .const button{
+    background: #00a950;
+    border-radius: 10px;
+    padding: 9px 15px;
+    color: #fff;
+    font-size: 13px;
+    font-family: "bobblebold";
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s linear;
+
+}
+.del .const button:hover{
+    background: #000;
+
+}
+.del img:nth-child(2){
+    width: 290px;
+    transform: translateX(-100px) translateY(30px);
+
+}
+.del img:nth-child(3){
+    width: 200px;
+    transform: translateX(-70px);
+
+}
+.food_chart{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.food_chart .food_bx{
+    position: relative;
+    width: 30%;
+    height: 450px;
+    background: #00a950;
+    padding: 60px 50px;
+    z-index: 2;
+
+}
+.food_chart .food_bx:nth-child(2){
+    width: 40%;
+    background: #ff8e27;
+}
+.food_chart .food_bx:nth-child(3){
+    background: #a1cf67;
+}
+.food_chart .food_bx .const{
+    position: relative;
+    z-index: 2;
+}
+.food_chart .food_bx .const h1{
+    font-family: "bobblebod";
+    font-size: 50px;
+    line-height: 50px;
+    color: #fff;
+}
+.food_chart .food_bx .const p{
+    font-size: 11px;
+    color: #fff;
+    margin-top: 18px;
+}
+.food_chart .food_bx .const button{
+    background: #000;
+    border-radius: 10px;
+    padding: 9px 15px;
+    color: #fff;
+    font-size: 13px;
+    font-family: "bobblebold";
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: .3s linear;
+
+}
+.food_chart .food_bx img{
+    position: absolute;
+    right: 0;
+    top: 10%;
+    width: 250px;
+    z-index: 0;
+
+
+}
+.food_chart .food_bx:nth-child(2) img{
+    position: absolute;
+    right: 0;
+    top: 10%;
+    width: 290px;
+    z-index: 0;
 }
