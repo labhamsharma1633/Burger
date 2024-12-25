@@ -452,3 +452,47 @@ section .img_bx .burger_badge .badge_card h5{
     width: 290px;
     z-index: 0;
 }
+.food_chart2 .food_bx{
+    position: relative;
+    width: 50%;
+    height: 280px;
+    background: #245dcb;
+    padding: 30px 50px;
+    z-index: 2;
+
+}
+.food_chart2 .food_bx:nth-child(2){
+    width: 30%;
+    background: #cd2869;
+}
+.food_chart2 .food_bx:nth-child(3){
+    width: 20%;
+    background: #fff;
+
+}
+.food_chart2 .food_bx:nth-child(1) img{
+    width: 400px;
+
+}
+.food_chart2 .food_bx:nth-child(2) img{
+    width: 170px;
+    height: 230px;
+}
+.food_chart2 .food_bx:nth-child(3) h1{
+    color: #000;
+    font-size: 45px;
+    line-height: 45px;
+
+
+}
+.food_chart2 .food_bx:nth-child(3) button{
+    border-radius: 50%;
+    padding: 9px 11px;
+    background: #ff8e27;
+    transition: .3s linear;
+
+}
+.food_chart2 .food_bx:nth-child(3) button:hover{
+    background: #000;
+
+}
